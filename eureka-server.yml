@@ -4,13 +4,11 @@ spring:
   profiles:
     active: stage
 
-
 ---
 spring:
   config:
     activate:
       on-profile: localhost
-    import: configserver:
   # cloud:
   #   config:
   #     uri: http://localhost:8888
@@ -37,8 +35,6 @@ spring:
   config:
     activate:
       on-profile: stage
-    import: configserver:
-
   # cloud:
   #   config:
   #     uri: http://config-server:8888
